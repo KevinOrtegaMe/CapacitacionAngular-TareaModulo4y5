@@ -1,0 +1,17 @@
+div >.content{
+    text-align: center;
+}
+
+p{
+    font-size: 20px;
+}
+
+img{
+    width: 35%;
+}
+
+p > span {
+	font-family: Arial Verdana;
+	font-size: 18px;
+	font-weight:bold;
+}

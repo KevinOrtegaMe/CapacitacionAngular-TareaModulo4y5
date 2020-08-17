@@ -1,0 +1,55 @@
+
+<div class = "content">
+    <h1>Routing</h1>
+    <h2>
+        ¿Qué es routing?
+    </h2>
+    <p>
+        Es el encargado de reconocer cuál es la ruta que el usuario quiere mostrar, 
+        presentando la pantalla correcta en cada momento.
+    </p>
+    <h2>
+        Importar el código del sistema de routing
+    </h2>
+
+    <p>
+        En el módulo principal tenemos que hacer los correspondientes imports.<br>
+
+        Se deben incluir a RouterModule y Routes, que obtenemos de la librería <span>@angular/router</span>. <br>
+        El código será como este:<br><br>
+
+        <img src="assets/paso1.jpg" alt="ImportaRouting">
+    </p>
+
+    <h2>
+        Crear la lista de las rutas disponibles en la aplicación
+    </h2>
+    <p>
+        Tenemos que crear un array de las rutas que queremos usar en nuestra aplicación. <br>
+        Utilizaremos la declaración del tipo <span>Routes</span>, que hemos dicho es un array de objetos Route.<br>
+        Cada objeto cuenta de dos items importantes tales como <span>path</span>, donde se especificara la ruta y <br>
+        <span>component</span>, donde se declarara el componente a usar,<br>
+        El código será como este:<br><br>
+        <img src="assets/paso2.jpg" alt="RutasDisponibles">
+    </p>
+
+    <h2>
+        Declarar el sistema de routing en el "imports" del decorador @NgModule
+    </h2>
+
+    <p>
+        Ahora tienes que editar el decorador del módulo principal @NgModule, <br>
+        donde tendrás que colocar en el array "imports" la declaración de que vas a usar el sistema de routing de Angular.<br>
+        El código será como este:<br><br>
+        <img src="assets/paso3.jpg" alt="DeclaraImports">
+    </p>
+
+    <h2>Definir el template del componente principal</h2>
+    <p>
+        Nos ubicamos en el componente principal en el que tenemos que meter un poco de código en la vista, <br>
+        archivo "app.component.html", en mi caso cree un componente llamado <span>header</span> y este es llamado del antes mencionado<br>
+        En el template se crea el navegador de las rutas, indicando en los enlaces la directiva "routerLink", con el valor de cada ruta.<br><br>
+        <img src="assets/paso4.jpg" alt="DefineComponentePrincipal">
+    </p>
+    
+</div>
